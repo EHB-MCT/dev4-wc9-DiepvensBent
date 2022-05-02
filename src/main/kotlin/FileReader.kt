@@ -25,7 +25,6 @@ class FileReader {
         var file = File(url).readLines()
         val inputList = mutableListOf<List<Int>>()
         file.forEach{
-            println("Test")
             val charArray = it.toCharArray()
             val intList = charArray.map{it -> it.digitToInt() }
             inputList.add(intList)
